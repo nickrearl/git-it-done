@@ -11,6 +11,7 @@ var getUserRepos = function(user){
     .then(function(response){
         if(response.ok){
             response.json().then(function(data){
+                console.log(data)
                 displayRepos(data, user)
             })
         }
